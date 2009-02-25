@@ -33,8 +33,8 @@ removed.  Send email to the contact address if you use this program.
 EOF
 
 %build
-pod2man %SOURCE0 > %{name}.1
-pod2text %SOURCE0 > %{name}.txt
+pod2man %{SOURCE0} > %{name}.1
+pod2text %{SOURCE0} > %{name}.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -48,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc COPYING %{name}.txt
 %attr(755,root,root) %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
-%doc COPYING %{name}.txt
