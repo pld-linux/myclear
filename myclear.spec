@@ -1,5 +1,4 @@
 #
-%include        /usr/lib/rpm/macros.perl
 Summary:	Command for clearing to bottom of terminal instead of top
 Summary(pl.UTF-8):	Komenda czyszcząca terminal do dołu zamiast do góry
 Name:		myclear
